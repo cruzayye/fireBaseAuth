@@ -30,7 +30,7 @@ const singleUserRef = userId => userRef.child(userId);
 
 export const register = (userInfo) => {
   const { email, password } = userInfo;
-  let user = { ...userInfo };
+  let user = { userInfo };
   return auth
     .createUserWithEmailAndPassword(email, password)
     .then(data => {
