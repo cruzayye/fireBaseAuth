@@ -6,10 +6,23 @@ export class SignUp extends Component {
 
   }
 
+  state = {
+    name: null
+    
+  }
+  handleChange = ({ target }) => {
+    this.setState({ [target.name]: target.value });
+  }
+
   render() {
     return (
       <section className={styles.SignUp}>
-        <h2>login</h2>
+        <h2>Sign UP</h2>
+        <form>
+          <input type="name" name="name" onChange={this.handleChange} />
+        </form>
+
+
       </section>
     );
   }
