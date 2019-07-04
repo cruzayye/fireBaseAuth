@@ -1,3 +1,44 @@
+
+body {
+background: rgb(8,8,8);
+background: linear-gradient(153deg, rgba(8,8,8,1) 0%, rgba(188,17,246,1) 100%) fixed;
+}
 :local(.SignUp) {
-  color: red;
+  color: white;
+  margin-top: 15%;
+
+  h2{
+    text-align: center;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 70%;
+    margin: auto;
+
+    input {
+      border: none;
+      border-bottom: 1px solid black;
+    }
+
+    input:focus {
+      outline: none;
+      background-color: cyan;
+    }
+
+    button {
+      width: 25%;
+      justify-self: center;
+      border-radius: 15%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    form {
+      width: 25%;
+    }
+  }
+ 
+
 }
