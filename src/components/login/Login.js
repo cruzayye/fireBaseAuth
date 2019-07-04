@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from './Login.css'
 
 export class Login extends Component {
   static propTypes = {
@@ -7,7 +8,7 @@ export class Login extends Component {
 
   render() {
     return (
-      <h2>
+      <h2 className={styles.Login}>
         login
       </h2>
     )
