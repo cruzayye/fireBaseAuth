@@ -30,6 +30,14 @@
     }
   }
 
+  article{
+    justify-self: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   @media only screen and (min-width: 600px) {
     form {
       width: 25%;

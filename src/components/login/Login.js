@@ -10,6 +10,7 @@ export class Login extends Component {
     email: null,
     password: null,
     wasLoginSuccessful: false,
+    isLoginErrVisible: false,
   }
 
   handleChange = ({ target }) => {
@@ -26,6 +27,7 @@ export class Login extends Component {
         this.setState({ wasLoginSuccessful: true });
       }
     } catch(error) {
+      this.setState({ isLoginErrVisible: true });
       console.log('no user', error);
     }
   }
@@ -53,6 +55,11 @@ export class Login extends Component {
             onChange={this.handleChange} />
           <button type="submit">login</button>
           <button><Link to="/signup">signup</Link></button>
+          <article className="error">
+            {this.state.isLoginErrVisible && (
+              <p>Email or password is incorrect</p> 
+            )}
+          </article>
         </form>
       </section>
     );
