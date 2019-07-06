@@ -43,5 +43,10 @@ export const register = (userInfo) => {
     });
 };
 
+//login
+export const login = (email, password) => {
+  return auth.signInWithEmailAndPassword(email,password);
+}
+
 
 // Initialize Firebase

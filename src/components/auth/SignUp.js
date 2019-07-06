@@ -3,10 +3,6 @@ import styles from './SignUp.css';
 import { register } from '../services/firebaseConfig';
 
 export class SignUp extends Component {
-  static propTypes = {
-
-  }
-
   state = {
     name: null,
     lastName: null,
