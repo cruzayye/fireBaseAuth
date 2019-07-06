@@ -16,8 +16,8 @@ export default function App() {
      <>
       <Router>
         <Switch>
-            <Route path={LOGIN.path} component={LOGIN.component} />
             <Route path={SIGNUP.path} component={SIGNUP.component} />
+            <Route path={LOGIN.path} component={LOGIN.component} />
         </Switch>
      </Router>
      </>
