@@ -1,4 +1,7 @@
+:local(body) {
+  background: white;
 
+} 
 body {
 background: rgb(8,8,8);
 background: linear-gradient(153deg, rgba(8,8,8,1) 0%, rgba(188,17,246,1) 100%) fixed;
